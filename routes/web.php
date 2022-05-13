@@ -14,4 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FilmController@index')->name('home');
+Route::get('/home', 'FilmController@index')->name('home');
+
+Auth::routes();
 
